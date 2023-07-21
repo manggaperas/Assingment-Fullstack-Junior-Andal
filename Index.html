@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Assignment Fullstack Junior</title>
+    <link rel="stylesheet" href="Style.css">
+</head>
+
+<body>
+    <h1>Array Power Set</h1>
+    <label for="nums">Silahkan Masukkan Angka atau Huruf yang diinginkan (pisahkan dengan koma): </label>
+    <input type="text" id="nums" placeholder="ex: 1,2,3">
+    <button id="showButton">Tampilkan Hasil</button>
+    <button id="testButton">Code Sesuai Contoh</button>
+    <div id="output"></div>
+    <!-- Skrip untuk mengimpor kelas Program -->
+    <script type="module">
+        import { showPowerSet, runTestCase } from './Program.js';
+
+        // Menambahkan event listeners ke buttons
+        document.getElementById("showButton").addEventListener("click", showPowerSet);
+        document.getElementById("testButton").addEventListener("click", runTestCase);
+    </script>
+</body>
+
+</html>
